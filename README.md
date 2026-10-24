@@ -24,14 +24,21 @@ Não reutilizar identificador Datasigh entre unidades sem preservar a unidade.
 ## Validação
 Execute: node tests/defocus.test.cjs
 Testes de banco executados em transação revertida: inclusão, leitura, 11 pontos, atualização, satisfação zero, revisões, conflito e recusa de outra conta.
-PDF sintético extraído e renderizado para conferência A4.
+PDF sintético extraído e renderizado para conferência A4. Site publicado testado no Chrome: 11 etapas, LIO manual, satisfação zero, salvamento local e recuperação após recarregar.
 O teste real de login da conta clínica não deve ser realizado com senha compartilhada no chat.
 
 ## Pendências
-- Busca Datasigh por nome: ainda não integrada. O cliente legado listarPacientes necessita adaptar a assinatura por unidade; produção não foi alterada.
+- Confirmar com sessão clínica autenticada o filtro nomePaciente e o formato real retornado pelo Datasigh. Busca implementada em rota isolada, com debounce, cancelamento de respostas antigas e preenchimento manual alternativo.
 - Verificação no Safari/iPhone físico e compartilhamento nativo do PDF.
 - Comparação de LIOs e simulador do segundo olho.
 - Histórico paginado para mais de 100 exames e seleção vinculada de paciente manual.
 - Confirmação ponta a ponta com a conta do médico no navegador.
 
 Não apagar registros reais nos testes. Dados sintéticos de banco foram revertidos.
+
+## Integração Datasigh / Railway
+Produção correta: projeto considerate-enchantment (0bae6f3d-2ccf-4492-b32e-38d2dc2239ef), serviço orbeOS (68f39795-30e2-4028-a193-61ed7809d70b), ambiente 2e342c39-9518-41b8-b7e9-4cddc9d192aa, https://app.orbeos.com.br.
+O projeto shimmering-adventure citado no handoff era somente uma criação pendente e não foi alterado.
+GET /defocus/pacientes?unit=cianorte|campo_mourao&q=fragmento exige token Supabase validado e conta autorizada.
+Backend: keitishirasu/pedido-exames, PR #257. As rotas clínicas anteriores foram preservadas. O filtro de nome é repassado à API; diferenças de acento também dependem do filtro do Datasigh. A lista retornada é normalizada e filtrada antes da apresentação; máximo 20 resultados.
+Exportação da migração já aplicada: database/applied-defocus.sql. O SQL documenta o banco, não deve ser reaplicado sem revisão.
