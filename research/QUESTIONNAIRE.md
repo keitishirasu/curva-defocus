@@ -31,3 +31,7 @@ ESCRS Recommendations for Cataract Surgery, seções sobre seleção para LIOs c
 A equipe autenticada seleciona a ficha do paciente e gera convite individual. O celular deve abrir um formulário público limitado ao convite, sem login da equipe e sem mostrar prontuário. Token opaco sem nome/ID na URL, prazo e revogação; respostas retornam ao servidor e são vinculadas ao contato e à versão do questionário. Confirmação de envio somente após gravação. O QR é alternativa ao compartilhamento por WhatsApp; nenhum envio a pacientes foi realizado.
 
 ESTADO: requisito definido, ainda não implementado. O formulário estático atual não recebe respostas remotas da equipe/paciente. Não apresentar QR genérico como se tivesse vínculo com a ficha.
+
+## v1.3 — preferência por seleção
+
+Profissão, hobbies, atividades indispensáveis, perto/intermediário/longe, tarefas de precisão e objetivos passam a listas de múltipla escolha, com Outro e complemento opcional. As seleções são preservadas nos registros e na impressão preenchida/em branco. Respostas livres de versões anteriores continuam recuperáveis e aparecem no complemento, sem descartá-las. Identificação, distâncias reais e observações clínicas continuam como campos específicos; nenhum valor ou atividade é presumido por ausência de resposta.
