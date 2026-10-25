@@ -40,6 +40,8 @@ O catálogo segue com curvas numéricas globais vazias. A próxima camada de sim
 
 `python research/build-catalogue.py` gera catálogo e simulador a partir da mesma base JSON.
 
+Instale a dependência de teste fixada em `package.json` com `npm install` (Node.js 24.15+ LTS ou outra versão compatível com package.json). Depois rode `npm test`, ou individualmente:
+
 - `node tests/defocus.test.cjs`
 - `node tests/catalogo.test.cjs`
 - `node tests/simulator.test.cjs`

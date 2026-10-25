@@ -1,0 +1,15 @@
+{
+  "name": "curva-defocus",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Internal defocus examination and exploratory IOL planning app",
+  "scripts": {
+    "test": "node tests/defocus.test.cjs && node tests/catalogo.test.cjs && node tests/simulator.test.cjs"
+  },
+  "devDependencies": {
+    "jsdom": "30.1.3"
+  },
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
+  }
+}

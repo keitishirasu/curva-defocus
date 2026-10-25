@@ -50,4 +50,4 @@ Disponível em [simulador.html](https://keitishirasu.github.io/curva-defocus/sim
 
 Não gera curvas comerciais com base apenas em SA/adição/energia, não converte MTF em AV e não prevê binocularidade. Limites, método independente e fontes em [research/SIMULATOR.md](research/SIMULATOR.md).
 
-Validação adicional: `node tests/simulator.test.cjs`. A geração de catálogo e simulador usa `python research/build-catalogue.py` e a mesma base revisada de LIOs.
+Validação (Node.js 24.15+ LTS ou outra versão compatível com package.json): `npm install` e `npm test`. A dependência jsdom é usada apenas pelos testes de DOM, nunca pelo app publicado. A geração de catálogo e simulador usa `python research/build-catalogue.py` e a mesma base revisada de LIOs.
