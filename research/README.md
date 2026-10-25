@@ -45,4 +45,4 @@ Somente curvas com condições compatíveis poderão sobrepor-se à curva do pri
 
 Testes preexistentes do exame: `node tests/defocus.test.cjs`.
 Integridade do catálogo: `node tests/catalogo.test.cjs`.
-Teste DOM: 33 registros, busca, filtro, comparação limitada a quatro e limpeza passaram em ambiente jsdom. Validação visual e navegador real são registradas no PR conforme disponibilidade do ambiente. Safari/iPhone físico permanece verificação independente.
+Teste DOM: 33 registros, busca, filtro, comparação limitada a quatro e limpeza passaram em ambiente jsdom. Chromium real: renderização desktop e viewport de 390 px, busca, filtros, comparação limitada a quatro, limpeza e exportação JSON passaram sem exceções nem overflow global. Capturas foram inspecionadas visualmente. Safari/iPhone físico permanece verificação independente.
