@@ -44,10 +44,12 @@ Backend: keitishirasu/pedido-exames, PR #257. As rotas clínicas anteriores fora
 Exportação da migração já aplicada: database/applied-defocus.sql. O SQL documenta o banco, não deve ser reaplicado sem revisão.
 
 
-## Simulador de planejamento da LIO
+## Planejamento guiado da LIO — v2
 
-Disponível em [simulador.html](https://keitishirasu.github.io/curva-defocus/simulador.html). No exame, “Planejar segundo olho” transfere a curva e identifica o olho contralateral. Compara duas fichas do catálogo, aceita referências clínicas identificadas e oferece um laboratório óptico de perfis genéricos. Salva planos localmente, exporta/restaura JSON e imprime/PDF; ainda não sincroniza os planos no orbeOS.
+Disponível em [simulador.html](https://keitishirasu.github.io/curva-defocus/simulador.html). Na tela principal, selecione primeiro/segundo olho, objetivos, tolerância, pupila/aberrometria e avaliação clínica. O app sugere uma estratégia e modelos compatíveis, com justificativas, pendências e compromissos. No segundo olho, usa curva importada pelo botão do exame ou medidas pontuais reais para identificar lacunas. Nenhuma visão binocular é fabricada.
 
-Não gera curvas comerciais com base apenas em SA/adição/energia, não converte MTF em AV e não prevê binocularidade. Limites, método independente e fontes em [research/SIMULATOR.md](research/SIMULATOR.md).
+Sugestões são apoio qualitativo à decisão médica, não um modelo clínico validado de melhor marca individual. Empates e dados faltantes são explícitos; ver [research/RECOMMENDATIONS.md](research/RECOMMENDATIONS.md). Comparação detalhada e laboratório óptico genérico ficam disponíveis em áreas próprias.
 
-Validação (Node.js 24.15+ LTS ou outra versão compatível com package.json): `npm install` e `npm test`. A dependência jsdom é usada apenas pelos testes de DOM, nunca pelo app publicado. A geração de catálogo e simulador usa `python research/build-catalogue.py` e a mesma base revisada de LIOs.
+Planos locais preservam modo, dados, regras/resultado e exclusões justificadas; podem ser exportados/restaurados em JSON e impressos/PDF. Ainda não sincronizam no orbeOS. Trocar modo preserva histórico com um novo plano; trocar olho limpa os exames desse olho.
+
+Validação: Node.js compatível com package.json, `npm ci` e `npm test`. jsdom é apenas dependência de teste. Geração: `python research/build-catalogue.py`, com a mesma base revisada de LIOs para catálogo e simulador. Método óptico e limites em [research/SIMULATOR.md](research/SIMULATOR.md).

@@ -1,6 +1,8 @@
-# Simulador de planejamento da LIO — v1 (25/10/2026)
+# Simulador de planejamento da LIO — v2 (25/10/2026)
 
 O módulo é publicado em `simulador.html`, junto ao app atual. O botão “Planejar segundo olho” envia um snapshot do exame via sessionStorage, na mesma aba. Nenhum exame ou tabela do banco é alterado.
+
+A interface principal v2 oferece modos primeiro/segundo olho e sugestão automática qualitativa por objetivos e lacunas. Regras, estados e limitações em [RECOMMENDATIONS.md](RECOMMENDATIONS.md). O laboratório numérico abaixo continua independente da sugestão por marca.
 
 ## Fluxo implementado
 
