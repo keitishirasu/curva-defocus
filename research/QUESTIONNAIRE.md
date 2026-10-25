@@ -1,6 +1,6 @@
-# Questionário pré-operatório orbeOS v1.1
+# Questionário Protocolo Visão 360 v1.2
 
-Entrevista própria antes da primeira cirurgia de catarata. Não exige nem apresenta resultado do primeiro olho. Inspirada nos domínios de rotina, objetivos, óculos e expectativas da ficha CLUB enviada pelo usuário, com redação e organização próprias.
+Entrevista própria sobre rotina visual, objetivos e expectativas antes da definição da indicação de correção visual (LIOs ou outras opções refrativas). Sem pressupor catarata. Não exige nem apresenta resultado do primeiro olho. Inspirada nos domínios de rotina, objetivos, óculos e expectativas da ficha CLUB enviada pelo usuário, com redação e organização próprias.
 
 ## Ajustes
 
@@ -25,3 +25,9 @@ Não foi criado endpoint nem tabela de banco. Questionários não sincronizam no
 ## Referência
 
 ESCRS Recommendations for Cataract Surgery, seções sobre seleção para LIOs corretoras da presbiopia e expectativas, consultadas em 25/10/2026: https://www.escrs.org/escrs-recommendations-for-cataract-surgery . A diretriz apoia a investigação de comorbidades, independência de óculos e expectativas realistas. Não valida esta ficha própria nem um escore de candidatura.
+
+## QR Code individual — requisito de integração
+
+A equipe autenticada seleciona a ficha do paciente e gera convite individual. O celular deve abrir um formulário público limitado ao convite, sem login da equipe e sem mostrar prontuário. Token opaco sem nome/ID na URL, prazo e revogação; respostas retornam ao servidor e são vinculadas ao contato e à versão do questionário. Confirmação de envio somente após gravação. O QR é alternativa ao compartilhamento por WhatsApp; nenhum envio a pacientes foi realizado.
+
+ESTADO: requisito definido, ainda não implementado. O formulário estático atual não recebe respostas remotas da equipe/paciente. Não apresentar QR genérico como se tivesse vínculo com a ficha.

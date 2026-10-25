@@ -1,5 +1,5 @@
 const fs=require('node:fs'),assert=require('node:assert/strict'),{JSDOM}=require('jsdom'),{webcrypto}=require('node:crypto');
-const html=fs.readFileSync('questionario.html','utf8'),script=fs.readFileSync('simulator/questionnaire.js','utf8');
+const html=fs.readFileSync('questionario.html','utf8');assert(html.includes('PROTOCOLO VISÃO 360'));assert(!/catarata/i.test(html));const script=fs.readFileSync('simulator/questionnaire.js','utf8');
 function boot(context){const d=new JSDOM(html,{url:'https://example.test/questionario.html',runScripts:'outside-only'}),w=d.window;w.confirm=()=>true;w.print=()=>{w.printed=true};if(context)w.sessionStorage.setItem('orbeos_questionnaire_context_v1',JSON.stringify(context));w.eval(script);return w}
 const w=boot({schema:'orbeos-questionnaire-context-v1',source:'exam',sentAt:new Date().toISOString(),values:{patient:'TESTE',birth:'1950-01-02',datasighId:'123',unit:'cianorte',clinicalSnapshot:'LIO TESTE'}}),$=id=>w.document.getElementById(id);
 assert.equal($('patient').value,'TESTE');assert.equal($('birth').value,'1950-01-02');assert.equal($('diabetes').value,'');assert.equal($('clinicalReviewed').value,'');assert.equal(w.sessionStorage.getItem('orbeos_questionnaire_context_v1'),null);
