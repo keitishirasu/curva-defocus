@@ -1,5 +1,6 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
 const E=require('../simulator/engine.js');
+assert.equal(E.acuityLogmar('20/20','snellen'),0);assert.equal(E.acuityLogmar('6/12','snellen'),E.acuityLogmar('20/40','snellen'));assert.equal(E.acuityLogmar('','snellen'),null);assert.equal(E.acuityLogmar('20/0','snellen'),null);assert.equal(E.acuityLogmar('40','snellen'),null);assert.equal(E.acuityLogmar('PL','snellen'),null);assert.equal(E.acuityLogmar(E.acuityText(.2,'snellen'),'snellen'),.2,'unit conversion must preserve the cutoff boundary');assert.equal(E.acuityText(E.acuityLogmar('20/40','snellen'),'snellen'),'20/40');
 assert.equal(E.number(''),null);assert.equal(E.number('0'),0);assert.equal(E.number('−0,3'),-.3);assert.equal(E.number('-0,3'),-.3);
 assert.throws(()=>E.scaled(.27,0,3,4),/maior|ampliação/);
 const z=E.scaled(.27,.08,6,3);assert.equal(z.c6,.08/64);assert(Math.abs(z.c4-(.27/16+Math.sqrt(35)*.08*(1/64-1/16)))<1e-14);

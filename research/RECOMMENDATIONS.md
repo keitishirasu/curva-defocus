@@ -8,7 +8,7 @@ A tela principal recebe primeiro/segundo olho, necessidade visual, distâncias d
 
 ## Resultado do primeiro olho
 
-No segundo olho, pode-se importar uma curva monocular do app ou informar medidas pontuais reais de longe, intermediário e perto em logMAR. As medições pontuais têm olho, correção e distâncias de origem próprios. Mudar a distância desejada não reatribui uma AV medida em outra distância. O plano e a análise registram a origem manual ou importada.
+No segundo olho, pode-se importar uma curva monocular do app ou informar medidas pontuais reais de longe, intermediário e perto em Snellen (padrão) ou logMAR. Frações 20/x ou 6/x são convertidas internamente por log10(denominador/numerador); o formato original acompanha o plano. Trocar o formato converte os valores válidos sem reinterpretá-los, e planos antigos sem esse campo continuam em logMAR. As medições pontuais têm olho, correção e distâncias de origem próprios. Mudar a distância desejada não reatribui uma AV medida em outra distância. O plano e a análise registram a origem manual ou importada.
 
 A comparação com o corte editável classifica cada foco como atendido, lacuna ou desconhecido. Uma lacuna de medida não significa visão normal; interpolações permanecem limitadas a segmentos observados de até 0,50 D. Não se calcula melhor olho, média monocular ou soma binocular como se fossem visão prevista.
 
