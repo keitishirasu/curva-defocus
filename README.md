@@ -53,3 +53,7 @@ Sugestões são apoio qualitativo à decisão médica, não um modelo clínico v
 Planos locais preservam modo, dados, regras/resultado e exclusões justificadas; podem ser exportados/restaurados em JSON e impressos/PDF. Ainda não sincronizam no orbeOS. Trocar modo preserva histórico com um novo plano; trocar olho limpa os exames desse olho.
 
 Validação: Node.js compatível com package.json, `npm ci` e `npm test`. jsdom é apenas dependência de teste. Geração: `python research/build-catalogue.py`, com a mesma base revisada de LIOs para catálogo e simulador. Método óptico e limites em [research/SIMULATOR.md](research/SIMULATOR.md).
+
+### Questionário pré-operatório
+
+Abra `questionario.html` pelo botão “Questionário pré-operatório” no exame ou no planejador para aproveitar os dados disponíveis. A ficha é anterior à primeira cirurgia, inclui detalhismo/perfeccionismo e tarefas de precisão e permite imprimir com respostas ou para preencher à mão. As preferências podem iniciar um planejamento do primeiro olho. Respostas são salvas no dispositivo e podem ser exportadas/restauradas; não sincronizam com o banco nesta versão. Salve o planejamento antes de navegar. Método e ajustes: `research/QUESTIONNAIRE.md`.
