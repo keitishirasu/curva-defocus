@@ -4,7 +4,7 @@
   "private": true,
   "description": "Internal defocus examination and exploratory IOL planning app",
   "scripts": {
-    "test": "node tests/defocus.test.cjs && node tests/catalogo.test.cjs && node tests/simulator.test.cjs && node tests/recommendations.test.cjs && node tests/questionnaire.test.cjs"
+    "test": "node tests/defocus.test.cjs && node tests/catalogo.test.cjs && node tests/simulator.test.cjs && node tests/recommendations.test.cjs && node tests/questionnaire.test.cjs && node tests/import-exam.test.cjs"
   },
   "devDependencies": {
     "jsdom": "30.1.3"
