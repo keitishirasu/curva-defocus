@@ -42,3 +42,12 @@ O projeto shimmering-adventure citado no handoff era somente uma criação pende
 GET /defocus/pacientes?unit=cianorte|campo_mourao&q=fragmento exige token Supabase validado e conta autorizada.
 Backend: keitishirasu/pedido-exames, PR #257. As rotas clínicas anteriores foram preservadas. O filtro de nome é repassado à API; diferenças de acento também dependem do filtro do Datasigh. A lista retornada é normalizada e filtrada antes da apresentação; máximo 20 resultados.
 Exportação da migração já aplicada: database/applied-defocus.sql. O SQL documenta o banco, não deve ser reaplicado sem revisão.
+
+
+## Simulador de planejamento da LIO
+
+Disponível em [simulador.html](https://keitishirasu.github.io/curva-defocus/simulador.html). No exame, “Planejar segundo olho” transfere a curva e identifica o olho contralateral. Compara duas fichas do catálogo, aceita referências clínicas identificadas e oferece um laboratório óptico de perfis genéricos. Salva planos localmente, exporta/restaura JSON e imprime/PDF; ainda não sincroniza os planos no orbeOS.
+
+Não gera curvas comerciais com base apenas em SA/adição/energia, não converte MTF em AV e não prevê binocularidade. Limites, método independente e fontes em [research/SIMULATOR.md](research/SIMULATOR.md).
+
+Validação adicional: `node tests/simulator.test.cjs`. A geração de catálogo e simulador usa `python research/build-catalogue.py` e a mesma base revisada de LIOs.
