@@ -21,3 +21,10 @@ assert.equal(data.lenses.find(x => x.id === 'luxsmart').addition.intermediate_d,
 assert(data.lenses.find(x => x.id === 'emv').sa.includes('positiva'));
 assert.notEqual(data.lenses.find(x => x.id === 'gemetric').id, data.lenses.find(x => x.id === 'gemetric-plus').id);
 console.log('PASS: base/HTML consistentes; 33 identidades, fontes, ausência distinta de zero, adições corrigidas e nenhuma curva artificial.');
+for (const l of data.lenses) {
+ assert.ok(l.spherical_aberration.source_id);
+ assert.ok(l.energy_distribution.status);
+ for(const k of ['distance_pct','intermediate_pct','near_pct']) assert.ok(l.energy_distribution[k]===null || (l.energy_distribution[k]>=0 && l.energy_distribution[k]<=100));
+}
+assert.equal(data.lenses.find(l=>l.id==='gemetric').spherical_aberration.value_um,-0.16);
+assert.equal(data.lenses.find(l=>l.id==='emv').spherical_aberration.value_um,null);

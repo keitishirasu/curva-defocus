@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": "1.1",
   "reviewed_at": "2026-10-25",
   "status": "Catálogo de referência v1 — validação por campo, sem seleção automática",
   "scope": "32 entradas do PDF; 33 registros após separar AcrySof e Clareon PanOptix. Famílias exigem confirmação da variante.",
@@ -357,6 +357,12 @@
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11146183/",
       "type": "coorte prospectiva",
       "accessed_at": "2026-10-25"
+    },
+    "mgz": {
+      "title": "Protocolo MGZ — resumo fornecido pelo usuário",
+      "url": null,
+      "type": "material do curso; valores não confirmados externamente",
+      "accessed_at": "2026-10-25"
     }
   },
   "lenses": [
@@ -386,7 +392,8 @@
         "panadd",
         "pan",
         "panstudy",
-        "iolcon"
+        "iolcon",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -397,7 +404,23 @@
       "course_correction": "",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": -0.1,
+        "label": "Negativa",
+        "status": "IOLCon · cadastrado",
+        "source_id": "iolcon",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": 44,
+        "intermediate_pct": 22,
+        "near_pct": 22,
+        "status": "Fabricante · conversão explícita",
+        "source_id": "pan",
+        "basis": "Luz incidente",
+        "condition": "A 3 mm: 88% aproveitada × 50/25/25% = 44/22/22% incidente. Os 12% restantes não são atribuídos aos três focos."
+      }
     },
     {
       "id": "panoptix-clareon",
@@ -423,7 +446,8 @@
       "limits": "Não misturar com PanOptix Pro, que tem outra declaração de eficiência luminosa.",
       "sources": [
         "pan",
-        "panadd"
+        "panadd",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -434,7 +458,23 @@
       "course_correction": "",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": -0.1,
+        "label": "Negativa",
+        "status": "IOLCon · cadastrado",
+        "source_id": "iolcon",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": 44,
+        "intermediate_pct": 22,
+        "near_pct": 22,
+        "status": "Fabricante · conversão explícita",
+        "source_id": "pan",
+        "basis": "Luz incidente",
+        "condition": "A 3 mm: 88% aproveitada × 50/25/25% = 44/22/22% incidente. Os 12% restantes não são atribuídos aos três focos."
+      }
     },
     {
       "id": "eyecryl",
@@ -462,7 +502,8 @@
         "eyecryl",
         "eyecrylstudy",
         "eyecrylp",
-        "iolcon"
+        "iolcon",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -472,7 +513,23 @@
       "course_correction": "",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": -0.2,
+        "label": "Negativa",
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": 44,
+        "intermediate_pct": null,
+        "near_pct": 36,
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária."
+      }
     },
     {
       "id": "optiflex",
@@ -498,7 +555,8 @@
       "limits": "Ficha antiga informa SRK/T óptico 118,37; página brasileira atual informa 119,00. Escolher por revisão/modelo e otimização, sem copiar automaticamente.",
       "sources": [
         "optiflex",
-        "optiflexbench"
+        "optiflexbench",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -509,7 +567,23 @@
       "course_correction": "Constantes divergentes entre revisões do fabricante.",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": -0.2,
+        "label": "Negativa",
+        "status": "IOLCon · cadastrado",
+        "source_id": "iolcon",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": 42,
+        "intermediate_pct": 22,
+        "near_pct": 24,
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária."
+      }
     },
     {
       "id": "finevision",
@@ -535,7 +609,8 @@
       "limits": "Não reutilizar resultados de Triumf ou de POD F hidrofílica como se fossem HP.",
       "sources": [
         "fine",
-        "finep"
+        "finep",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -546,7 +621,23 @@
       "course_correction": "",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": -0.11,
+        "label": "Negativa",
+        "status": "IOLCon · cadastrado",
+        "source_id": "iolcon",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": 42,
+        "intermediate_pct": 15,
+        "near_pct": 29,
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária."
+      }
     },
     {
       "id": "fullrange",
@@ -572,7 +663,8 @@
       "limits": "Nome FullRange sozinho não determina constante biométrica; fabricante lista constantes diferentes para SeeLens e BunnyLens.",
       "sources": [
         "full",
-        "fullstudy"
+        "fullstudy",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -582,7 +674,23 @@
       "course_correction": "",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": -0.13,
+        "label": "Negativa",
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": 44,
+        "intermediate_pct": null,
+        "near_pct": 36,
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária."
+      }
     },
     {
       "id": "intensity",
@@ -609,7 +717,8 @@
       "sources": [
         "intensity",
         "intensitystudy",
-        "iolcon"
+        "iolcon",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -620,7 +729,23 @@
       "course_correction": "Constante A e plataforma precisam ser discriminadas.",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": -0.13,
+        "label": "Negativa",
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": 42,
+        "intermediate_pct": null,
+        "near_pct": 16,
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "basis": "Base percentual não confirmada",
+        "condition": "Curso: longe 42%; 133 cm 8%; 80 cm 12%; 60 cm 14%; 40 cm 16%. Não há um único foco intermediário; soma 92%, sem renormalização."
+      }
     },
     {
       "id": "gemetric",
@@ -647,7 +772,8 @@
       "sources": [
         "gem",
         "gemtrial",
-        "iolcon"
+        "iolcon",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -658,7 +784,23 @@
       "course_correction": "SA diverge: −0,18 no curso versus −0,16 no IOLCon.",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": -0.16,
+        "label": "Negativa",
+        "status": "IOLCon · cadastrado",
+        "source_id": "iolcon",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": 50.9,
+        "intermediate_pct": 17.3,
+        "near_pct": 21.8,
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária."
+      }
     },
     {
       "id": "gemetric-plus",
@@ -685,7 +827,8 @@
       "sources": [
         "gem",
         "gemtrial",
-        "iolcon"
+        "iolcon",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -696,7 +839,23 @@
       "course_correction": "Separar Gemetric Plus do modelo Gemetric.",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": -0.16,
+        "label": "Negativa",
+        "status": "IOLCon · cadastrado",
+        "source_id": "iolcon",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": 34,
+        "intermediate_pct": 16,
+        "near_pct": 38,
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária."
+      }
     },
     {
       "id": "triva",
@@ -723,7 +882,8 @@
       "sources": [
         "triva",
         "trivap",
-        "trivabench"
+        "trivabench",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -734,7 +894,23 @@
       "course_correction": "",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": 0,
+        "label": "Neutra",
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": 44,
+        "intermediate_pct": 20,
+        "near_pct": 24,
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária. Curso especifica pupila de 3 mm."
+      }
     },
     {
       "id": "tecnis-mf",
@@ -760,7 +936,8 @@
       "limits": "Nome MF TECNIS é amplo; adições de outros modelos não são equivalentes.",
       "sources": [
         "mf",
-        "iolcon"
+        "iolcon",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -770,7 +947,23 @@
       "course_correction": "",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": -0.27,
+        "label": "Negativa",
+        "status": "IOLCon · cadastrado",
+        "source_id": "iolcon",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": 44,
+        "intermediate_pct": null,
+        "near_pct": 36,
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária."
+      }
     },
     {
       "id": "odyssey",
@@ -797,7 +990,8 @@
       "sources": [
         "odyssey",
         "odysseystudy",
-        "iolcon"
+        "iolcon",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -808,7 +1002,23 @@
       "course_correction": "",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": -0.27,
+        "label": "Negativa",
+        "status": "IOLCon · cadastrado",
+        "source_id": "iolcon",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": null,
+        "intermediate_pct": null,
+        "near_pct": null,
+        "status": "Não informada em percentuais",
+        "source_id": null,
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária."
+      }
     },
     {
       "id": "synergy",
@@ -836,7 +1046,8 @@
         "synergy",
         "panstudy",
         "synergyp",
-        "iolcon"
+        "iolcon",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -847,7 +1058,23 @@
       "course_correction": "Adição e percentuais do curso não adotados como especificação confirmada.",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": -0.27,
+        "label": "Negativa",
+        "status": "IOLCon · cadastrado",
+        "source_id": "iolcon",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": 44,
+        "intermediate_pct": 20,
+        "near_pct": 24,
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária."
+      }
     },
     {
       "id": "liberty",
@@ -873,7 +1100,8 @@
       "limits": "Não confundir 677MY com gerações atualizadas 677CMY.",
       "sources": [
         "liberty",
-        "libertystudy"
+        "libertystudy",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -884,7 +1112,23 @@
       "course_correction": "",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": 0,
+        "label": "Neutra",
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": 48,
+        "intermediate_pct": 12,
+        "near_pct": 28,
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária."
+      }
     },
     {
       "id": "bios",
@@ -909,7 +1153,8 @@
       "energy": "42/20/30% do curso não confirmados na ficha consultada.",
       "limits": "Dados em arquivo do fabricante não substituem estudo comparativo. Adição intermediária diverge do curso.",
       "sources": [
-        "bios"
+        "bios",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -920,7 +1165,23 @@
       "course_correction": "Ficha Rev07: intermediária +1,50 D; curso: +1,85 D.",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": 0,
+        "label": "Neutra",
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": 42,
+        "intermediate_pct": 20,
+        "near_pct": 30,
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária."
+      }
     },
     {
       "id": "amf-bi",
@@ -946,7 +1207,8 @@
       "limits": "Página confirma identidade e desenho. Adição, SA e dependência pupilar seguem pendentes.",
       "sources": [
         "amf",
-        "amfspec"
+        "amfspec",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -956,7 +1218,23 @@
       "course_correction": "",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": 0,
+        "label": "Neutra",
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": null,
+        "intermediate_pct": null,
+        "near_pct": null,
+        "status": "Não informada em percentuais",
+        "source_id": null,
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária."
+      }
     },
     {
       "id": "amf-tri",
@@ -982,7 +1260,8 @@
       "limits": "Adições constam no catálogo indexado; ficha integral não carregou. Não liberar esses números para cálculo automático.",
       "sources": [
         "amf",
-        "amfspec"
+        "amfspec",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -993,7 +1272,23 @@
       "course_correction": "",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": 0,
+        "label": "Neutra",
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": null,
+        "intermediate_pct": null,
+        "near_pct": null,
+        "status": "Não informada em percentuais",
+        "source_id": null,
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária."
+      }
     },
     {
       "id": "rayone-tri",
@@ -1019,7 +1314,8 @@
       "limits": "Versões tóricas devem preservar código e plano do cilindro. SRK/T óptico estimado do fabricante não é constante universal.",
       "sources": [
         "raytri",
-        "raytristudy"
+        "raytristudy",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -1030,7 +1326,23 @@
       "course_correction": "",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": 0,
+        "label": "Neutra",
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": 48,
+        "intermediate_pct": 18,
+        "near_pct": 22,
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária."
+      }
     },
     {
       "id": "elana",
@@ -1056,7 +1368,8 @@
       "limits": "Fabricante informa A rotulada 120,2; curso 119,5 pode ser outro tipo de constante. Exigir fórmula/origem.",
       "sources": [
         "elana",
-        "elanastudy"
+        "elanastudy",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -1067,7 +1380,23 @@
       "course_correction": "A nominal atual: 120,2; não substituir 119,5 sem identificar a origem de ambos.",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": 0,
+        "label": "Neutra",
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": 46,
+        "intermediate_pct": 18,
+        "near_pct": 22,
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária."
+      }
     },
     {
       "id": "lisa-tri",
@@ -1092,7 +1421,8 @@
       "energy": "46/18/22% do curso: condição pendente.",
       "limits": "AT ELANA e AT LISA tri usam plataformas e asfericidades diferentes.",
       "sources": [
-        "lisa"
+        "lisa",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -1103,7 +1433,23 @@
       "course_correction": "",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": -0.18,
+        "label": "Negativa",
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": 46,
+        "intermediate_pct": 18,
+        "near_pct": 22,
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária."
+      }
     },
     {
       "id": "tridiff",
@@ -1129,7 +1475,8 @@
       "limits": "Página EyeOL apresenta rótulos de adição mal alinhados. Não importar tabela HTML automaticamente.",
       "sources": [
         "tridiff",
-        "tridiff2"
+        "tridiff2",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -1140,7 +1487,23 @@
       "course_correction": "",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": 0,
+        "label": "Neutra",
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": null,
+        "intermediate_pct": null,
+        "near_pct": null,
+        "status": "Não informada em percentuais",
+        "source_id": null,
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária."
+      }
     },
     {
       "id": "eyediff",
@@ -1166,7 +1529,8 @@
       "limits": "Divergência de modelo e de tabela técnica impede recomendação automatizada.",
       "sources": [
         "eyediff",
-        "eyediffstudy"
+        "eyediffstudy",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -1176,7 +1540,23 @@
       "course_correction": "EyeDiff do artigo e EyeDIFF Plus da página não comprovados como idênticos.",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": 0,
+        "label": "Neutra",
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": null,
+        "intermediate_pct": null,
+        "near_pct": null,
+        "status": "Não informada em percentuais",
+        "source_id": null,
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária."
+      }
     },
     {
       "id": "hydiff",
@@ -1201,7 +1581,8 @@
       "energy": "Não informado em percentuais reproduzíveis.",
       "limits": "Página oficial confirma plataforma multifocal/tórica, mas não basta para atribuir +3,25 D ou curva esperada.",
       "sources": [
-        "hydiff"
+        "hydiff",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -1211,7 +1592,23 @@
       "course_correction": "",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": 0,
+        "label": "Neutra",
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": null,
+        "intermediate_pct": null,
+        "near_pct": null,
+        "status": "Não informada em percentuais",
+        "source_id": null,
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária."
+      }
     },
     {
       "id": "galaxy",
@@ -1238,7 +1635,8 @@
       "sources": [
         "galaxy",
         "galaxystudy",
-        "iolcon"
+        "iolcon",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -1249,7 +1647,23 @@
       "course_correction": "43 cm consta na coluna errada do curso; não é porcentagem de energia.",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": -0.17,
+        "label": "Negativa",
+        "status": "IOLCon · cadastrado",
+        "source_id": "iolcon",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": null,
+        "intermediate_pct": null,
+        "near_pct": null,
+        "status": "Não informada em percentuais",
+        "source_id": null,
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária."
+      }
     },
     {
       "id": "mplus",
@@ -1275,7 +1689,8 @@
       "limits": "Selecionar MF30 é diferente de MF20 e Comfort MF15.",
       "sources": [
         "mplus",
-        "iolcon"
+        "iolcon",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -1285,7 +1700,23 @@
       "course_correction": "",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": 0,
+        "label": "Neutra",
+        "status": "IOLCon · cadastrado",
+        "source_id": "iolcon",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": null,
+        "intermediate_pct": null,
+        "near_pct": null,
+        "status": "Não informada em percentuais",
+        "source_id": null,
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária."
+      }
     },
     {
       "id": "vivity",
@@ -1311,7 +1742,8 @@
       "limits": "'≥63 até <43 cm' do curso é uma faixa classificatória, não eficiência energética nem garantia de leitura.",
       "sources": [
         "vivity",
-        "vivitytrial"
+        "vivitytrial",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -1321,7 +1753,23 @@
       "course_correction": "Distância não é distribuição percentual de energia.",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": -0.2,
+        "label": "Negativa",
+        "status": "IOLCon · cadastrado",
+        "source_id": "iolcon",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": null,
+        "intermediate_pct": null,
+        "near_pct": null,
+        "status": "Não informada em percentuais",
+        "source_id": null,
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária."
+      }
     },
     {
       "id": "luxsmart",
@@ -1348,7 +1796,8 @@
       "sources": [
         "lux",
         "luxstudy",
-        "luxbench"
+        "luxbench",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -1358,7 +1807,23 @@
       "course_correction": "Neutra e +1,5 D de adição são simplificações inadequadas do desenho.",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": null,
+        "label": "Complexa · 4ª/6ª ordens",
+        "status": "MGZ · a conferir",
+        "source_id": "mgz",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": null,
+        "intermediate_pct": null,
+        "near_pct": null,
+        "status": "Não informada em percentuais",
+        "source_id": null,
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária."
+      }
     },
     {
       "id": "puresee",
@@ -1385,7 +1850,8 @@
       "sources": [
         "pure",
         "puretrial",
-        "iolcon"
+        "iolcon",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -1395,7 +1861,23 @@
       "course_correction": "",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": -0.27,
+        "label": "Negativa",
+        "status": "IOLCon · cadastrado",
+        "source_id": "iolcon",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": null,
+        "intermediate_pct": null,
+        "near_pct": null,
+        "status": "Não informada em percentuais",
+        "source_id": null,
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária."
+      }
     },
     {
       "id": "comfort",
@@ -1422,7 +1904,8 @@
       "sources": [
         "comfort",
         "comfortstudy",
-        "iolcon"
+        "iolcon",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -1432,7 +1915,23 @@
       "course_correction": "Curso marca N/A para adição; MF15 tem segmento +1,50 D.",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": 0,
+        "label": "Neutra",
+        "status": "IOLCon · cadastrado",
+        "source_id": "iolcon",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": null,
+        "intermediate_pct": null,
+        "near_pct": null,
+        "status": "Não informada em percentuais",
+        "source_id": null,
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária."
+      }
     },
     {
       "id": "isopure",
@@ -1459,7 +1958,8 @@
       "sources": [
         "isopure",
         "isopurebench",
-        "iolcon"
+        "iolcon",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -1469,7 +1969,23 @@
       "course_correction": "Classificação diverge entre fontes; preservar as duas.",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": null,
+        "label": "Asférica · sem valor único",
+        "status": "Magnitude não confirmada",
+        "source_id": "isopure",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": null,
+        "intermediate_pct": null,
+        "near_pct": null,
+        "status": "Não informada em percentuais",
+        "source_id": null,
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária."
+      }
     },
     {
       "id": "impress",
@@ -1495,7 +2011,8 @@
       "limits": "A nominal do fabricante é 118,8; 119,193 do curso exige origem/fórmula. Não substituir automaticamente.",
       "sources": [
         "impress",
-        "iolcon"
+        "iolcon",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -1505,7 +2022,23 @@
       "course_correction": "SA e tipo de constante divergem da tabela do curso.",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": -0.16,
+        "label": "Negativa",
+        "status": "IOLCon · cadastrado",
+        "source_id": "iolcon",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": null,
+        "intermediate_pct": null,
+        "near_pct": null,
+        "status": "Não informada em percentuais",
+        "source_id": null,
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária."
+      }
     },
     {
       "id": "eyhance",
@@ -1533,7 +2066,8 @@
         "eyhance",
         "eyhancetrial",
         "luxbench",
-        "iolcon"
+        "iolcon",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -1543,7 +2077,23 @@
       "course_correction": "",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": -0.27,
+        "label": "Negativa",
+        "status": "IOLCon · cadastrado",
+        "source_id": "iolcon",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": null,
+        "intermediate_pct": null,
+        "near_pct": null,
+        "status": "Não informada em percentuais",
+        "source_id": null,
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária."
+      }
     },
     {
       "id": "emv",
@@ -1570,7 +2120,8 @@
       "sources": [
         "emv",
         "emvstudy",
-        "synergyp"
+        "synergyp",
+        "mgz"
       ],
       "focus": [
         "longe",
@@ -1580,7 +2131,23 @@
       "course_correction": "Curso descreve neutra; mecanismo do fabricante utiliza SA positiva.",
       "reviewed_at": "2026-10-25",
       "availability": "Não confirmada na clínica",
-      "decision_automation": "Não habilitada"
+      "decision_automation": "Não habilitada",
+      "spherical_aberration": {
+        "value_um": null,
+        "label": "Positiva controlada",
+        "status": "Fabricante · sem magnitude",
+        "source_id": "emv",
+        "condition": "Abertura de análise não confirmada nesta ficha; não somar diretamente à aberrometria corneana."
+      },
+      "energy_distribution": {
+        "distance_pct": null,
+        "intermediate_pct": null,
+        "near_pct": null,
+        "status": "Não informada em percentuais",
+        "source_id": null,
+        "basis": "Base percentual não confirmada",
+        "condition": "Percentuais transcritos do curso; não normalizar para 100%. Verificar pupila, comprimento de onda e denominador na fonte primária."
+      }
     }
   ]
 }
